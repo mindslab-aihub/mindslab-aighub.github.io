@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>AI Hub</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <header>
+      AI Hub LeaderBoard &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </header>
+  <body>
+    <div class="wrapper">
+      <div class="leftView">
+        <h1 align="center">AI HUB LeaderBoard ? </h1>
+          <br>
+          <p>AI Hub에서 제공되는 질의응답 쌍으로 구성된 25만개 이상의 데이터셋을 통해 학습된 모델에 대한 평가가 이루어집니다. LeaderBoard에 평가 항목에 맞춰 순위가 매겨집니다.<br><br>
+          </p>
+          <p class="view" style="color:#12A0FF">학습 데이터 / 검증 데이터 <small></small></a></p>
+          <p>학습 데이터(Train set) 201,983개, 검증 데이터(Validation set) 20,652개의 질의응답쌍으로 구분하였습니다. </p></p>
+          <ul>
+              <a href="/data_script/aihub_train.json.zip">Download<strong>Train Data</strong></a>
+          </ul>
+          <ul>
+              <a href="/data_script/aihub_dev.json.zip">Download<strong>Validation Data</strong></a>
+          </ul>
+          <br>
+          <p class="view" style="color:#12A0FF">실행 스크립트 / Sample Prediction <small></small></p>
+          <p>학습 모델을 평가하기 위한 Evaluation script 와 Sample prediction 파일입니다. <br>
+              평가를 실행하려면 <br>
+              <b>python evaluate.py [path_to_validation] [path_to_predictions] </b><br>를 입력하세요. 테스트 파일이기 때문에 점수가 매우 낮을 수 있습니다.</p>
+
+          <ul>
+              <a href="/data_script/evaluate.py" download> Download<strong>Evaluation Script</strong></a>
+          </ul>
+          <ul>
+              <a href="/data_script/prediction.json" download>Download<strong>Sample Prediction</strong></a>
+          </ul>
+          <br>
+          <p class="view" style="color:#12A0FF">평가 제출 안내 <small></small></a></p>
+
+          <p>AI Hub LeaderBoard에 등재하시기 위해서는 별도의 평가 데이터를 통해 점수를 측정합니다. 평가데이터(Test set)는 테스트 결과의 무결성을 위해 공개되지 않기 때문에 모델을 제출하셔야 합니다.<br>
+              아래의 제출 안내를 통해 모델을 제출하시면 약 1-2 주의 시간이 소요된 뒤 해당 모델이 평가되어 LeaderBoard에 등재 됩니다.</p>
+
+          <ul>
+              <a href="https://worksheets.codalab.org/worksheets/0xbd09e74bcb3f4067b953047f3a7bb934" target="_blank">Link<strong>Tutorial</strong></a>
+          </ul>
+      </div>
+      <section>
+        <h1 align="center">LeaderBoard</h1>
+          <br>
+
+          <table>
+              <tbody>
+              <tr style="background-color: #c8c8c8">
+                  <th>Rank</th>
+                  <th>Date</th>
+                  <th>Model</th>
+                  <th>F1</th>
+                  <th>EM</th>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>2019-12-23</td>
+                  <td>bert-base</td>
+                  <td>81.22</td>
+                  <td>58.5</td>
+              </tr>
+
+<!--              <tr style="background-color: #d9d9d9">-->
+<!--              </tr>-->
+              </tbody>
+          </table>
+
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
+
